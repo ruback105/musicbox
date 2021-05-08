@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/page/login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+    <div id="header"></div>
+    <main id="main">
+        <div class="form">
+            <div class="wrapper">
+                <h1>What will you listen to today?</h1>
+                <div class="social-login">
+                    <a href="#" class="btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <p>Facebook</p>
+                    </a>
+                    <a href="#" class="btn google">
+                        <i class="fab fa-google"></i>
+                        <p>Google</p>
+                    </a>
+                </div>
+                <form action="">
+                    <div class="email">
+                        <label for="email">Email address or username</label>
+                        <input class="highlight" type="email" name="email" id="" placeholder="RandomExample@gmail.com">
+                    </div>
+                    <div class="password">
+                        <label for="password">Password</label>
+                        <input class="highlight" type="password" name="password" id="" placeholder="testtest">
+                    </div>
+                    <div class="bottom">
+                        <label class="container">Remember me
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <button type="submit" class="login btn">Log in</button>
+                    </div>
+                </form>
+                <a href="#">Forgot your password?</a>
+                <p class="title">Don't have an account?</p>
+                <a href="#" class="btn btn-outlined">Sign up for musicbox</a>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+
+    <script src="/js/router.js"></script>
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>

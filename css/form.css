@@ -1,0 +1,242 @@
+@import "./component/checkbox.css";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/assets/hero-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -88px;
+}
+
+.form {
+    background-color: #fff;
+    padding: 30px 10px;
+    width: 600px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #161a1a;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.social-login .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: initial;
+    flex: 0.5;
+    border: 100px;
+    padding: initial;
+    padding: 5px 10px;
+    text-transform: initial;
+    font-weight: 400;
+}
+
+.social-login .btn p {
+    width: 100%;
+}
+
+.social-login .btn.facebook {
+    background-color: #4267b2;
+    margin-right: 10px;
+    color: var(--text-primary);
+}
+
+.social-login .btn.google {
+    color: #000;
+    border: 0.5px solid #000;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+form > div {
+    position: relative;
+}
+
+form label {
+    position: absolute;
+    font-size: 11px;
+    color: #898b91;
+    top: 15px;
+    left: 10px;
+}
+
+form > div input {
+    width: 100%;
+    padding: 25px 10px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #d5d5d5;
+    box-sizing: border-box;
+}
+
+form > div :is(input, select):focus {
+    border: 1px solid #2d9bef;
+    outline: none;
+    border-width: 2px;
+}
+
+form > div input.highlight {
+    background-color: #f8fcff;
+}
+
+form > div input::placeholder {
+    color: #161a1a;
+    opacity: 1;
+}
+
+form .bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 10px;
+}
+
+.login.btn {
+    min-width: initial;
+    padding: 10px 30px;
+    background-color: #2d9bef;
+    border: none;
+}
+
+.checkmark {
+    margin-top: 8px;
+}
+
+.wrapper a {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #2d9bef;
+}
+
+.wrapper p.title {
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+.wrapper .btn-outlined {
+    border-color: #000;
+    width: 100%;
+    padding: 15px 0;
+    min-width: initial;
+    color: #000;
+    font-size: 16px;
+}
+
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdowns :is(input, select) {
+    flex: 0.45;
+    border: 1px solid #161a1a;
+    padding: 17.5px 10px;
+    border-radius: 5px;
+
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-right: 20px;
+    background-image: url("/assets/down.png");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: 95% 50%;
+    cursor: pointer;
+}
+
+.dropdowns input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+    content: "";
+}
+
+form > div input[name="username"] {
+    padding: 17.5px 10px;
+}
+
+p.terms {
+    text-align: center;
+}
+
+p.terms a,
+p.login a {
+    font-size: 14px;
+}
+
+.btn.signup {
+    background-color: var(--form-main-color);
+    padding: 20px 0;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    min-width: initial;
+}
+
+.g-recaptcha {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        width: 80%;
+    }
+    .form {
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .social-login .btn {
+        flex: 0.4;
+    }
+    .social-login .btn.facebook {
+        margin-right: 30px;
+    }
+    .login.btn {
+        padding: 10px 75px;
+    }
+}

@@ -1,0 +1,115 @@
+@import "/css/component/navbar.css";
+@import "/css/component/footer.css";
+@import "/css/component/button.css";
+
+:root {
+    --text-primary: #ffffff;
+    --text-secondary: #2dceef;
+    --text-gray: #afafaf;
+    --bg-main: #161a1a;
+    --bg-secondary: #111313;
+    --bg-icons: #363535;
+
+    --checkbox-checked: #2d9bef;
+    --checkbox-unchecked: #eee;
+
+    --form-main-color: #2d9bef;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav,
+main,
+section,
+footer {
+    width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--text-primary);
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+#main {
+    padding-top: 88px;
+}
+
+/** media start */
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+/** Media query end */
+
+@keyframes hamburgerPulse {
+    0% {
+        border: 1px solid var(--text-primary);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    75% {
+        border: 1px solid var(--text-secondary);
+        transform: scale(2);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+@keyframes slide {
+    0% {
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
